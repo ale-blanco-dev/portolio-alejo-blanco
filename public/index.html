@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">Alejo Blanco - Portfolio</title>
+  <link rel="icon" href="/assets/img/pc.png">
+  <script src="https://kit.fontawesome.com/66112f4a82.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <aside class="card sidebar">
+    <div class="avatar">
+      <img src="/assets/img/img_avatar.jpg" />
+      <span class="status-dot"></span>
+    </div>
+    <h1 data-i18n="name">Alejandro Blanco</h1>
+    <span class="role" data-i18n="role">QA Automation Engineer</span>
+
+    <div class="contact-info">
+      <p><strong data-i18n="email_label">EMAIL</strong><br /><span
+          data-i18n="email">alejandroblancosanchez0@gmail.com</span></p>
+
+      <p><strong data-i18n="phone_label">PHONE</strong><br /><span data-i18n="phone">+57 314 2631327</span></p>
+
+      <p><strong data-i18n="location_label">LOCATION</strong><br /><span data-i18n="location">Colombia, Bogota</span>
+      </p>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/ale-blanco-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/alejandro-blanco-sanchez" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <section class="card section-wrapper">
+      <nav class="nav-tabs">
+        <div class="nav-links">
+          <a href="#" class="nav-link active" data-section="about" data-i18n="nav_about">About</a>
+          <a href="#" class="nav-link" data-section="resume" data-i18n="nav_resume">Resume</a>
+          <a href="#" class="nav-link" data-section="portfolio" data-i18n="nav_portfolio">Portfolio</a>
+        </div>
+
+        <div class="language-dropdown">
+          <button class="language-btn">
+            <img src="/assets/img/usa-flag.png" alt="English" />
+          </button>
+          <ul class="language-menu">
+            <li>
+              <a href="#" data-lang="en">
+                <img src="/assets/img/usa-flag.png" alt="English" />
+                English
+              </a>
+            </li>
+            <li>
+              <a href="#" data-lang="es">
+                <img src="/assets/img/colombia-flag.png" alt="Español" />
+                Español
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="tab-content">
+        <section class="tab-panel" id="about">
+          <h2 data-i18n="about_title">About Me</h2>
+          <p data-i18n="about_paragraph_1">
+            QA Automation Engineer with 5+ years of experience improving software quality and
+            performance across web, mobile, and dataphone environments. I specialize in building
+            scalable frameworks using Java, Serenity BDD, Screenplay, Rest-Assured, and K6.
+          </p>
+          <p data-i18n="about_paragraph_2">
+            Certified in AWS Cloud Practitioner, I've led and contributed to key initiatives such as
+            the correspondent banking project with one of the largest financial groups in Latin America,
+            ensuring test automation and traceability at scale. My work spans CI/CD integration, BDD
+            adoption and performance testing.
+          </p>
+          <p data-i18n="about_paragraph_3">
+            I'm results-driven, self-critical, and focused on delivering clarity through automation.
+            I thrive in agile teams, document precisely, and question assumptions to catch issues early.
+            If you're looking for someone who automates with purpose and thinks in systems: let's talk.
+          </p>
+
+          <section id="section-what-i-do">
+            <h3 class="title-what-i-do" data-i18n="focus_title">My focus</h3>
+            <div class="grid-service-modules">
+              <div class="service-module">
+                <div class="text-service">
+                  <h4 class="title-service" data-i18n="focus_mobile">Mobile Automation</h4>
+                  <p data-i18n="focus_mobile_desc">
+                    End-to-end automation on Android using Appium. Different validations designed for
+                    both real devices and dataphones.
+                  </p>
+                </div>
+              </div>
+              <div class="service-module">
+                <div class="text-service">
+                  <h4 class="title-service" data-i18n="focus_web">Web Automation</h4>
+                  <p data-i18n="focus_web_desc">
+                    UI automation with Java, Selenium, and Serenity BDD. Screenplay pattern for maintainability,
+                    reusable steps, and Gherkin integration.
+                  </p>
+                </div>
+              </div>
+              <div class="service-module">
+                <div class="text-service">
+                  <h4 class="title-service" data-i18n="focus_api">API Automation</h4>
+                  <p data-i18n="focus_api_desc">
+                    Validation using Rest-Assured. Dynamic data models, validating endpoints with
+                    custom payloads and reusable objects.
+                  </p>
+                </div>
+              </div>
+              <div class="service-module">
+                <div class="text-service">
+                  <h4 class="title-service" data-i18n="focus_k6">K6 Performance Testing</h4>
+                  <p data-i18n="focus_k6_desc">
+                    Load testing with K6 using Grafana and database validation to measure
+                    latency, TPS, error rates, and verify the NRFs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        </section>
+        <section class="tab-panel hidden" id="resume">
+          <h2 data-i18n="resume_title">Resume</h2>
+          <h3 class="resume-subsection-title" data-i18n="experience_section">EXPERIENCIA</h3>
+
+          <div class="resume-experience-timeline">
+            <div class="resume-experience-block">
+              <div class="resume-line-marker"></div>
+              <div class="resume-experience-content">
+                <div class="resume-job-title">Wompi</div>
+                <div class="resume-duration" id="experience-wompi">+</div>
+                <div class="resume-role-description" data-i18n="role_wompi">QA Developer</div>
+              </div>
+            </div>
+
+            <div class="resume-experience-block">
+              <div class="resume-line-marker"></div>
+              <div class="resume-experience-content">
+                <div class="resume-job-title">Assertsoft</div>
+                <div class="resume-duration">+1 año, 2 meses</div>
+                <div class="resume-role-description" data-i18n="role_assertsoft">QA Analyst and Tester</div>
+              </div>
+            </div>
+
+            <div class="resume-experience-block">
+              <div class="resume-line-marker"></div>
+              <div class="resume-experience-content">
+                <div class="resume-job-title">Componente Serviex</div>
+                <div class="resume-duration">+1 año, 8 meses</div>
+                <div class="resume-role-description" data-i18n="role_serviex">QA Analyst</div>
+              </div>
+            </div>
+
+            <div class="resume-experience-block">
+              <div class="resume-line-marker"></div>
+              <div class="resume-experience-content">
+                <div class="resume-job-title">Global Hitss</div>
+                <div class="resume-duration">+6 meses</div>
+                <div class="resume-role-description" data-i18n="role_hitss">QA intern</div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="resume-subsection-title" data-i18n="education_section">EDUCACIÓN</h3>
+          <div class="resume-education-list">
+
+            <div class="resume-education-item">
+              <div class="resume-line-marker"></div>
+              <div class="resume-education-content">
+                <div class="resume-education-header">
+                  <span class="resume-degree" data-i18n="education_1">Systems Engineering.</span>
+                  <span class="resume-status" data-i18n="status_finalized">Finalized</span>
+                </div>
+                <div class="resume-institution">Fundación Universitaria Compensar
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-education-item">
+              <div class="resume-line-marker"></div>
+              <div class="resume-education-content">
+                <div class="resume-education-header">
+                  <span class="resume-degree" data-i18n="education_2">Technology in Systems Analysis and Design</span>
+                  <span class="resume-status" data-i18n="status_finalized">Finalized</span>
+                </div>
+                <div class="resume-institution">Fundación Universitaria Compensar
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-education-item">
+              <div class="resume-line-marker"></div>
+              <div class="resume-education-content">
+                <div class="resume-education-header">
+                  <span class="resume-degree" data-i18n="education_3">Technician in DB Operation and Maintenance</span>
+                  <span class="resume-status" data-i18n="status_finalized">Finalized</span>
+                </div>
+                <div class="resume-institution">Fundación Universitaria Compensar
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tab-panel hidden" id="portfolio">
+          <h2 data-i18n="portfolio_title">Portfolio Web</h2>
+
+          <section class="component-project-stacked-adapter">
+            <div class="box-stacked-project-adapter">
+              <div class="image-wrapper-project-adapter">
+                <img src="/assets/img/portfolio-i-need-to-learn-english.png" alt="Adapt to English"
+                  class="img-top-project-adapter" />
+                <a href="https://i-need-to-adapt-to-english.web.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn-arrow-project-adapter">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <div class="text-content-project-adapter">
+                <h3 class="title-project-stacked">I need to adapt to English</h3>
+                <p class="desc-project-stacked" data-i18n="project_1_desc">
+                  A project I made to help improve my English and development skills using Firebase, JavaScript, and
+                  CSS.
+                  But most importantly, it helped me explore how to work with the ChatGPT API by generating any question
+                  using the exact prompt needed.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="component-project-stacked-adapter">
+            <div class="box-stacked-project-adapter">
+              <div class="image-wrapper-project-adapter">
+                <img src="/assets/img/learn-book-qa.png" alt="Learn QA App" class="img-top-project-adapter" />
+                <a href="https://learnbook-ale.web.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn-arrow-project-adapter">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <div class="text-content-project-adapter">
+                <h3 class="title-project-stacked">Learn QA App</h3>
+                <p class="desc-project-stacked" data-i18n="project_2_desc">
+                  A project I made to help others learn about QA Automation. It includes
+                  a variety of resources, tutorials, and guides on topics like Selenium, Rest-Assured, Performance
+                  testing and ISTQB Resources.
+                  The goal is to provide a comprehensive learning platform for aspiring QA
+                  professionals.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+    </section>
+  </main>
+  <script src="/assets/js/index.js"></script>
+</body>
+
+</html>

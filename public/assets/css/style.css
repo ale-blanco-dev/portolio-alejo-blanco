@@ -1,0 +1,567 @@
+:root {
+  --font-family: 'Quicksand', sans-serif;
+  --color-bg-body: #1a121e;
+  --color-text-main: #f1f1f1;
+  --color-text-muted: #aaa;
+  --color-text-highlight: #c882fe;
+  --color-border: #222;
+  --color-card-bg: #1e1e1e;
+  --color-tab-bg: #0f0f0f;
+  --color-service-bg: #1e1e1e;
+  --color-accent: #c882fe;
+  --color-accent-soft: #9a5fb5;
+  --font-size-title: 1.5rem;
+  --font-size-subtitle: 1.1rem;
+  --font-size-text: 0.95rem;
+  --radius-card: 20px;
+  --radius-tab: 12px;
+  --radius-inner: 15px;
+  --radius-avatar: 50%;
+  --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.25);
+  --shadow-tab-active: 0 -2px 5px rgba(0, 0, 0, 0.4);
+  --shadow-service: 0 6px 20px rgba(0, 0, 0, 0.25);
+  --shadow-service-hover: 0 12px 30px rgba(0, 0, 0, 0.4);
+  --gap-layout: 2rem;
+  --padding-card: 2rem;
+  --padding-tab-content: 0.1rem 4rem 1rem 4rem;
+}
+
+body {
+  background-color: var(--color-bg-body);
+  color: var(--color-text-main);
+  font-family: var(--font-family);
+  display: flex;
+  gap: var(--gap-layout);
+  padding: var(--gap-layout);
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.sidebar {
+  width: 280px;
+  height: 25rem;
+  padding: var(--padding-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-avatar);
+  overflow: hidden;
+  margin: 0 auto 1rem auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-avatar);
+}
+
+.socials i {
+  font-size: 2.2rem;
+  margin: 0 0.3rem;
+  color: var(--color-text-main);
+}
+
+.socials a {
+  font-size: 2.2rem;
+  margin: 0 0.3rem;
+  color: transparent;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0.6rem 1.2rem;
+  border-top-left-radius: var(--radius-tab);
+  border-top-right-radius: var(--radius-tab);
+  transition: all 0.2s ease;
+}
+
+.nav-link.active {
+  background-color: var(--color-tab-bg);
+  color: var(--color-text-highlight);
+  box-shadow: var(--shadow-tab-active);
+}
+
+.language-dropdown {
+  position: relative;
+}
+
+.language-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.language-btn img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.language-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.language-menu li {
+  list-style: none;
+}
+
+.language-menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.language-menu a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.language-menu img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.tab-content {
+  padding: var(--padding-tab-content);
+  height: 50rem;
+}
+
+.tab-panel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.service-card {
+  background-color: var(--color-card-bg);
+  padding: 1.2rem;
+  border-radius: var(--radius-inner);
+  box-shadow: var(--shadow-service);
+}
+
+#section-what-i-do {
+  margin-top: 3rem;
+}
+
+.title-what-i-do {
+  font-size: var(--font-size-title);
+  margin-bottom: 1.5rem;
+  color: var(--color-text-main);
+}
+
+.grid-service-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-module {
+  height: 8rem;
+  background-color: var(--color-service-bg);
+  border-radius: var(--radius-inner);
+  box-shadow: var(--shadow-service);
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-module:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-service-hover);
+}
+
+.text-service .title-service {
+  color: var(--color-text-main);
+  font-size: var(--font-size-subtitle);
+  font-weight: bold;
+  margin: 0;
+}
+
+.text-service p {
+  font-size: var(--font-size-text);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+#tab-resume {
+  padding: 2rem 1.5rem;
+}
+
+.resume-title-main {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-main);
+}
+
+.resume-subsection-title {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+}
+
+.resume-experience-timeline,
+.resume-education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.resume-line-marker {
+  width: 4px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.resume-experience-block,
+.resume-education-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.resume-experience-content,
+.resume-education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.resume-job-title,
+.resume-degree {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--color-text-main);
+}
+
+.resume-duration,
+.resume-status {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+.resume-role-description,
+.resume-institution {
+  font-size: var(--font-size-text);
+  color: var(--color-text-muted);
+}
+
+.resume-education-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.component-project-stacked-adapter {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.box-stacked-project-adapter {
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.image-wrapper-project-adapter {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.img-top-project-adapter {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.btn-arrow-project-adapter {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-accent-soft);
+  color: var(--color-text-main);
+  border-radius: 50%;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.btn-arrow-project-adapter:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg-body);
+}
+
+.text-content-project-adapter {
+  background-color: var(--color-card-bg);
+  padding: 2rem;
+  color: var(--color-text-main);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.title-project-stacked {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.desc-project-stacked {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tab-content {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .grid-service-modules {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .resume-title-main {
+    font-size: 1.6rem;
+  }
+
+  .resume-subsection-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+  }
+
+  .language-dropdown {
+    align-self: flex-end;
+    width: fit-content;
+  }
+
+  .language-btn img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .tab-content {
+    padding: 1rem 1.5rem;
+  }
+
+  .language-btn img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .language-menu {
+    right: 0;
+    top: calc(100% + 0.5rem);
+    position: absolute;
+  }
+
+  .language-menu a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    gap: 0.4rem;
+  }
+
+  .language-menu img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .resume-education-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .grid-service-modules {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .component-project-stacked-adapter {
+    margin: 1.5rem 0;
+  }
+
+  .text-content-project-adapter {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-title: 1.2rem;
+    --font-size-subtitle: 1rem;
+    --font-size-text: 0.85rem;
+    --padding-tab-content: 0.5rem 1rem;
+  }
+
+  .tab-panel h2 {
+    font-size: 1.4rem;
+  }
+
+  .language-btn img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .language-dropdown {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .language-menu {
+    right: auto;
+    left: 0;
+  }
+
+  .language-menu a {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+    gap: 0.3rem;
+  }
+
+  .language-menu img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .resume-job-title,
+  .resume-degree {
+    font-size: 0.95rem;
+  }
+
+  .resume-duration,
+  .resume-status {
+    font-size: 0.8rem;
+  }
+
+  .desc-project-stacked {
+    font-size: 0.9rem;
+  }
+
+  .btn-arrow-project-adapter {
+    padding: 0.4rem;
+    font-size: 0.75rem;
+  }
+}
