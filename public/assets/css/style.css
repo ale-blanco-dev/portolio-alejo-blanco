@@ -48,7 +48,7 @@ body {
 
 .sidebar {
   width: 280px;
-  height: 25rem;
+  height: 50%;
   padding: var(--padding-card);
   display: flex;
   flex-direction: column;
@@ -286,7 +286,7 @@ body {
 }
 
 .service-module {
-  height: 8rem;
+  height: 9rem;
   background-color: var(--color-service-bg);
   border-radius: var(--radius-inner);
   box-shadow: var(--shadow-service);
@@ -469,8 +469,8 @@ body {
   }
 
   .avatar {
-    width: 60px;
-    height: 60px;
+    width: 50%;
+    height: 50%;
   }
 
   .tab-content {
@@ -505,7 +505,7 @@ body {
   .sidebar {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0rem;
   }
 
   .nav-tabs {
