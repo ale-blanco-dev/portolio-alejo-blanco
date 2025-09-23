@@ -2,3 +2,4 @@ package.json
 .firebase
 firebase-debug.log
 public/assets/utils/translate-web-site.json
+public/assets/pdf

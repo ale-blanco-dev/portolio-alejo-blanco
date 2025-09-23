@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,9 +35,20 @@
       <a href="https://github.com/ale-blanco-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <i class="fa-brands fa-github"></i>
       </a>
-      <a href="https://www.linkedin.com/in/alejandro-blanco-sanchez" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/alejandro-blanco-sanchez" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin"></i>
       </a>
+    </div>
+
+    <div class="cv-download">
+      <button data-i18n="lang_cv" class="dropbtn" onclick="toggleDropdown()">📄 Download CV</button>
+      <div id="cvDropdown" class="dropdown-content">
+        <a href="/assets/pdf/[ES_ATS] - Alejandro_Blanco_QAAutomationEngineer_2025.pdf" download>Español – ATS</a>
+        <a href="/assets/pdf/[ES_NO-ATS] - Alejandro_Blanco_QAAutomationEngineer_2025.pdf" download>Español – NO-ATS</a>
+        <a href="/assets/pdf/[EN_ATS] - Alejandro_Blanco_QAAutomationEngineer_2025.pdf" download>English – ATS</a>
+        <a href="/assets/pdf/[EN_NO-ATS] - Alejandro_Blanco_QAAutomationEngineer_2025.pdf" download>English – NO-ATS</a>
+      </div>
     </div>
   </aside>
 
@@ -51,6 +63,7 @@
 
         <div class="language-dropdown">
           <button class="language-btn">
+            <p id="lang_label" data-i18n="lang_label">Language: </p>
             <img src="/assets/img/usa-flag.png" alt="English" />
           </button>
           <ul class="language-menu">
@@ -217,7 +230,11 @@
         </section>
         <section class="tab-panel hidden" id="portfolio">
           <h2 data-i18n="portfolio_title">Portfolio Web</h2>
-
+          <p class="subtitle">Build • Test • Learn</p>
+          <p data-i18n="portfolio_description">
+            Una muestra de proyectos personales y de aprendizaje que reflejan mi curiosidad,
+            práctica constante y motivación por crecer en QA y desarrollo web.
+          </p>
           <section class="component-project-stacked-adapter">
             <div class="box-stacked-project-adapter">
               <div class="image-wrapper-project-adapter">

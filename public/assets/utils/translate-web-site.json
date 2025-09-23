@@ -1,5 +1,7 @@
 {
   "en": {
+    "lang_label": "Language: ",
+    "lang_cv": "📄 Download CV",
     "title": "Alejandro Blanco - QA Automation Engineer",
     "name": "Alejandro Blanco",
     "role": "QA Automation Engineer",
@@ -37,11 +39,14 @@
     "education_3": "Technician in DB Operation and Maintenance",
     "status_completed": "Completed",
     "portfolio_title": "Portfolio Web",
+    "portfolio_description": "A showcase of personal and learning projects that reflect my curiosity, constant practice, and motivation to grow in QA and web development.",
     "project_1_desc": "A project I made to help improve my English and development skills using Firebase, JavaScript, and CSS. But most importantly, it helped me explore how to work with the ChatGPT API by generating any question using the exact prompt needed.",
     "project_2_desc": "A project I made to help others learn about QA Automation. It includes a variety of resources, tutorials, and guides on topics like Selenium, Rest-Assured, Performance testing and ISTQB Resources. The goal is to provide a comprehensive learning platform for aspiring QA professionals.",
     "status_finalized": "Finalized"
   },
   "es": {
+    "lang_label": "Idioma: ",
+    "lang_cv": "📄 Descargar CV",
     "title": "Alejandro Blanco - Ingeniero de Automatización QA",
     "name": "Alejandro Blanco",
     "role": "Ingeniero de Automatización QA",
@@ -80,6 +85,7 @@
     "status_completed": "Finalizado",
     "institution": "Fundación Universitaria Compensar",
     "portfolio_title": "Portafolio Web",
+    "portfolio_description": "Una muestra de proyectos personales y de aprendizaje que reflejan mi curiosidad, práctica constante y motivación por crecer en QA y desarrollo web.",
     "project_1_desc": "Un proyecto que hice para mejorar mis habilidades de inglés y desarrollo usando Firebase, JavaScript y CSS. Pero lo más importante fue explorar cómo trabajar con la API de ChatGPT generando cualquier pregunta con el prompt exacto.",
     "project_2_desc": "Un proyecto que creé para ayudar a otros a aprender sobre automatización QA. Incluye recursos, tutoriales y guías sobre Selenium, Rest-Assured, pruebas de rendimiento y material ISTQB. El objetivo es ofrecer una plataforma de aprendizaje completa para futuros QA.",
     "status_finalized": "Finalizado"
