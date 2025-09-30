@@ -1,16 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const startDate = new Date('2023-01-02');
-  const now = new Date();
-  let yearsDiff = now.getFullYear() - startDate.getFullYear();
-  let monthsDiff = now.getMonth() - startDate.getMonth();
-
-  if (monthsDiff < 0) {
-    yearsDiff -= 1;
-    monthsDiff += 12;
-  }
-  const timeWompi = document.getElementById('experience-wompi');
-  timeWompi.textContent = `+${yearsDiff} años, ${monthsDiff} meses`;
-});
 const navLinks = document.querySelectorAll(".nav-link");
 const panels = document.querySelectorAll(".tab-panel");
 
